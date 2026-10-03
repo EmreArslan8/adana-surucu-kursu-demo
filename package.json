@@ -1,0 +1,9 @@
+{
+  "name": "adana-surucu-kursu-demo",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "build": "node src/build.js",
+    "dev": "node src/build.js && node src/serve.js"
+  }
+}

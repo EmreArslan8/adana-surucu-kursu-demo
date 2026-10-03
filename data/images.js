@@ -1,0 +1,45 @@
+// Stok görseller (Unsplash, ücretsiz lisans). Canlıya çıkarken kursun kendi fotoğraflarıyla değişecek.
+const u = (id, w = 1200) => `https://images.unsplash.com/photo-${id}?auto=format&fit=crop&w=${w}&q=70`;
+
+export const img = (key, w) => u(images[key].id, w);
+export const alt = (key) => images[key].alt;
+
+export const images = {
+  hero: { id: "1630406144797-821be1f35d75", alt: "Direksiyon sınavında kursiyere araç gösteren eğitmen" },
+  womanDriving: { id: "1527593167147-e9c94a5883e6", alt: "Direksiyon eğitimi alan kadın kursiyer" },
+  lesson: { id: "1516862523118-a3724eb136d7", alt: "Gündüz trafikte direksiyon dersi" },
+  lesson2: { id: "1612709060421-596380268eaf", alt: "Araç kullanan kursiyer" },
+  lesson3: { id: "1553782097-130fef5d3e27", alt: "Eğitmen eşliğinde araç kullanımı" },
+  driverMan: { id: "1611508106567-6218ae6c5f6a", alt: "Araç kullanan erkek sürücü" },
+  carInterior: { id: "1578041262130-633307b3bfd6", alt: "Direksiyon başında sürücü" },
+  automatic: { id: "1528307869100-e1bad0b9a1c0", alt: "Otomatik vites kolu" },
+  manual: { id: "1534675206212-b6bc629ca261", alt: "Manuel vites kolu" },
+  gear: { id: "1606128031531-52ae98c9707a", alt: "Vites kolu yakın çekim" },
+  steering: { id: "1542834506-979b3951bc9a", alt: "Araç direksiyonu" },
+  motorcycle: { id: "1558981806-ec527fa84c39", alt: "Otoyolda motosiklet süren sürücü" },
+  helmet: { id: "1590506995460-d0d9892b54da", alt: "Motosiklet kaskı" },
+  motoRider: { id: "1506424482693-1f123321fa53", alt: "Kask takan motosiklet sürücüsü" },
+  scooter: { id: "1675332647352-73e2371eaca1", alt: "Şehir içinde scooter kullanan sürücü" },
+  truck: { id: "1611746351408-c0a1346be8e8", alt: "Yolda ilerleyen kamyon" },
+  trucks: { id: "1766785368863-f2188a8c8b32", alt: "Otoyolda tırlar" },
+  bus: { id: "1534800891164-a1d96b5114e7", alt: "Şehir içinde otobüs" },
+  classroom: { id: "1758270704262-ecc82b23dc37", alt: "Teorik ders sınıfında eğitmen ve kursiyerler" },
+  classroom2: { id: "1606761568499-6d2451b23c66", alt: "Bilgisayarlı sınıfta e-sınav hazırlığı" },
+  studying: { id: "1514369118554-e20d93546b30", alt: "Ehliyet sınavına çalışan kursiyer" },
+  adana: { id: "1698172137543-b4c30a38684d", alt: "Adana şehir merkezi ve Büyük Saat" },
+  adanaBridge: { id: "1698171979539-b9fb321d7b88", alt: "Seyhan Nehri üzerindeki köprü" },
+  adanaAerial: { id: "1705229335693-16a7869a36f6", alt: "Adana'nın havadan görünümü" },
+  stone: { id: "1549934882-f2b6536a591f", alt: "Taşköprü, Adana" },
+  traffic: { id: "1597762333765-cbcd63dd8acc", alt: "Şehir trafiğinde araçlar" },
+  trafficLight: { id: "1624724126923-e2c021df1311", alt: "Kırmızı yanan trafik ışığı" },
+  stopSign: { id: "1618737739013-aed8938604fb", alt: "Dur levhası" },
+  signs: { id: "1573846764373-39f57aaeda0a", alt: "Çeşitli trafik levhaları" },
+  parking: { id: "1506521781263-d8422e82f27a", alt: "Otopark alanının havadan görünümü" },
+  firstAid: { id: "1624638760852-8ede1666ab07", alt: "İlk yardım çantası" },
+  keys: { id: "1533558701576-23c65e0272fb", alt: "Elde tutulan araç anahtarı" },
+  dashboard: { id: "1562618817-253b06cf2b6e", alt: "Gece yolunda direksiyon ve gösterge paneli" },
+  night: { id: "1584310881889-93bc9c4577ff", alt: "Gece şehir ışıkları arasında araç kullanımı" },
+  highway: { id: "1568369461174-26a4ec7f3ea6", alt: "Gün batımında otoyol" },
+  road: { id: "1629451467132-8897418827a4", alt: "Ağaçlı yolda gün batımı" },
+  speedo: { id: "1597386601945-8980df52c3dc", alt: "Araç hız göstergesi" },
+};
